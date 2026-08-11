@@ -3,7 +3,7 @@
 [![Build](https://github.com/twme-ai/FaweKit/actions/workflows/build.yml/badge.svg)](https://github.com/twme-ai/FaweKit/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-繁體中文使用文件：[完整指令手冊](docs/commands.zh-TW.md)
+Command reference: [English](docs/commands.md) | [繁體中文](docs/commands.zh-TW.md)
 
 An open-source Bukkit/Paper extension for FastAsyncWorldEdit that implements the
 still-useful user-facing proposals from FAWE discussion 1886 without forking or
@@ -25,6 +25,9 @@ The protocol-level test procedure is documented in
 
 ## Documentation
 
+- [Complete English command reference](docs/commands.md): syntax, parameters,
+  flags, permissions, examples, persistence, and edge cases for every FaweKit
+  command.
 - [繁體中文完整指令手冊](docs/commands.zh-TW.md): syntax, parameters, flags,
   permissions, examples, persistence, and edge cases for every FaweKit command.
 - [Feature scope audit](docs/coverage.md): implemented, superseded, and rejected
@@ -47,8 +50,8 @@ The protocol-level test procedure is documented in
   and copies it. `-x` excludes the matched blocks themselves.
 - `//autorotatepaste` (`//arp`): after `//copy`, rotates the clipboard in
   90-degree increments from the copied selection direction to the new selection
-  direction and pastes pos1-to-pos1. It supports `-abenosr` and `-m`, matching
-  native paste behavior; `-r` uses the player's normal placement position.
+  direction and aligns its origin to the new selection's primary point. It
+  supports `-abenosr` and `-m`; `-r` uses the normal FAWE placement position.
 - `//msel push|pop|combine|delete|clear|list|undo|redo`: maintains a selection
   stack. Its list is paginated and entries teleport when clicked. Combined
   selections remain usable by native FAWE edit commands.

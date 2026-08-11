@@ -1,5 +1,7 @@
 # FaweKit 完整指令手冊
 
+語言：[English](commands.md) | **繁體中文**
+
 本文件以 FaweKit `0.1.0` 的實際實作為準，介紹插件本身的命令、加入
 FAWE 的遮罩，以及由 FaweKit 改寫後交給 FAWE 執行的相容語法。
 
