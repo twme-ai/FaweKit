@@ -1,0 +1,65 @@
+name: FaweKit
+version: '${version}'
+main: dev.twme.fawekit.FaweKitPlugin
+api-version: '1.21'
+authors: [TWME]
+depend: [FastAsyncWorldEdit]
+description: Unofficial productivity extensions for FastAsyncWorldEdit
+commands:
+  /tpsel:
+    aliases: [/seltp]
+    permission: fawekit.tpsel
+  /multireplace:
+    aliases: [/multirepl]
+    permission: fawekit.multireplace
+  /clipboard:
+    permission: fawekit.clipboard
+  /copynear:
+    permission: fawekit.copynear
+  /autorotatepaste:
+    aliases: [/arp]
+    permission: fawekit.autorotatepaste
+  /msel:
+    permission: fawekit.msel
+  /ssel:
+    permission: fawekit.ssel
+  /bmask:
+    permission: fawekit.bmask
+  /help-masks:
+    permission: fawekit.help
+  /help-patterns:
+    permission: fawekit.help
+  /echo:
+    permission: fawekit.echo
+  /shortcut:
+    aliases: [/sc]
+    permission: fawekit.shortcut
+  /pin:
+    permission: fawekit.pin
+  /unpin:
+    permission: fawekit.pin
+permissions:
+  fawekit.tpsel:
+    default: op
+  fawekit.multireplace:
+    default: op
+  fawekit.clipboard:
+    default: op
+  fawekit.copynear:
+    default: op
+  fawekit.autorotatepaste:
+    default: op
+  fawekit.msel:
+    default: op
+  fawekit.ssel:
+    default: op
+  fawekit.bmask:
+    default: op
+  fawekit.help:
+    default: true
+  fawekit.echo:
+    default: op
+  fawekit.shortcut:
+    default: op
+  fawekit.pin:
+    default: op
