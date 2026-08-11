@@ -3,6 +3,8 @@
 [![Build](https://github.com/twme-ai/FaweKit/actions/workflows/build.yml/badge.svg)](https://github.com/twme-ai/FaweKit/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+繁體中文使用文件：[完整指令手冊](docs/commands.zh-TW.md)
+
 An open-source Bukkit/Paper extension for FastAsyncWorldEdit that implements the
 still-useful user-facing proposals from FAWE discussion 1886 without forking or
 patching FAWE.
@@ -20,6 +22,13 @@ Build with `./gradlew build`, then place `build/libs/FaweKit-0.1.0.jar` beside
 FAWE in the server `plugins` directory.
 The protocol-level test procedure is documented in
 [integration/README.md](integration/README.md).
+
+## Documentation
+
+- [繁體中文完整指令手冊](docs/commands.zh-TW.md): syntax, parameters, flags,
+  permissions, examples, persistence, and edge cases for every FaweKit command.
+- [Feature scope audit](docs/coverage.md): implemented, superseded, and rejected
+  items from the source proposal.
 
 ## Implemented commands
 
@@ -67,8 +76,6 @@ The protocol-level test procedure is documented in
   command, so FAWE remains responsible for permissions and execution.
 - `//schematic search [-dfn] [-p page] <text>` fuzzy-sorts files from FAWE's
   configured schematic directory and produces clickable native load commands.
-
-The detailed scope audit is in [docs/coverage.md](docs/coverage.md).
 
 ## License
 
